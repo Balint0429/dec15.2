@@ -1,1 +1,14 @@
 <p>biciklik works!</p>
+<div class="row">
+    <div class="col-md-3 mb-3 col-sm-4" *ngFor="let product of products; let i = index">
+      <div class="card">
+        <img src="assets/kerekpar/{{ product.image }}" class="card-img-top img-fluid product-image-home" alt="Product Image">
+        <div class="card-body">
+          <h5 class="card-title">{{ product.name }}</h5>
+          <p class="card-text">{{ product.description }}</p>
+          <p class="card-text">Ár: {{ product.price}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
